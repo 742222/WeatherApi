@@ -1,0 +1,93 @@
+/* main ruels  */
+:root {
+  --main-color: #009ad8;
+  --primary-color: #1e202b;
+}
+body {
+  color: #bfc1c8;
+}
+.bg-section {
+  background-color: #323544;
+}
+.bg-primary-section {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+/* navbar  */
+nav {
+  background-color: var(--primary-color);
+}
+small {
+  font-size: 10px;
+}
+.navbar-toggler {
+  border-color: white !important;
+}
+.navbar-toggler-icon {
+  background-image: url("/images/navicon.png") !important;
+}
+.nav-link {
+  border: 2px solid transparent;
+}
+@media screen and (min-width: 992px) {
+  .nav-link.active,
+  .nav-link:hover {
+    border-color: var(--main-color);
+    color: var(--main-color) !important;
+  }
+}
+/* section  */
+.temp {
+  font-size: 5rem;
+}
+@media screen and (max-width: 576px) {
+  .row1 {
+    background-color: white !important;
+  }
+  .inner1 {
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+  }
+  .inner3 {
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+}
+/* footer  */
+footer {
+  background-color: #262936;
+}
+input {
+  background-color: var(--primary-color) !important;
+}
+::placeholder {
+  color: grey !important;
+}
+footer .icon {
+  width: 40px;
+  height: 40px;
+  background-color: var(--primary-color);
+  cursor: pointer;
+}
+footer .icon svg {
+  color: var(--main-color) !important;
+}
+button {
+  background-color: var(--main-color) !important;
+}
+span.status {
+  color: var(--main-color);
+}
+span.status,
+footer p {
+  font-size: 14px;
+}
+.icon,
+.icon svg {
+  transition: 0.5s;
+}
+.icon:hover {
+  background-color: var(--main-color);
+}
+.icon:hover svg {
+  color: white !important;
+}

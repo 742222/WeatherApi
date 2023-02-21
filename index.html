@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Api</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/master.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <div class="navbar-brand d-flex align-items-center gap-3">
+          <div>
+            <img src="images/logo.png" />
+          </div>
+          <div class="text-white">
+            <p class="mb-0 h6">Weather</p>
+            <small class="text-white-50">tagline goes here</small>
+          </div>
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active rounded-pill py-1 px-4 mx-2 text-white"
+                aria-current="page"
+                href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link rounded-pill py-1 px-4 text-white mx-2"
+                href="#"
+                >News</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link rounded-pill py-1 px-4 text-white mx-2"
+                href="#"
+                >Live cameras</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link rounded-pill py-1 px-4 text-white mx-2"
+                href="#"
+                >Photos</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link rounded-pill py-1 px-4 text-white mx-2"
+                href="#"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container pt-5">
+      <div class="position-relative">
+        <input
+          type="text"
+          class="form-control p-3 rounded-pill border-0 text-white"
+          placeholder="Find Ypur Location..."
+          id="find"
+        />
+        <button
+          class="position-absolute end-0 me-2 top-50 px-4 translate-middle-y btn rounded-pill text-white"
+        >
+          Find
+        </button>
+      </div>
+    </div>
+    <section class="py-5">
+      <div class="container">
+        <div class="row row1 rounded-3 overflow-hidden bg-section">
+          <div class="col-md-4">
+            <div class="inner1 bg-section">
+              <div
+                class="d-flex align-items-center justify-content-between bg-primary-section p-2"
+              >
+                <span id="currday"></span>
+                <span id="currdate"></span>
+              </div>
+              <div class="p-3">
+                <span id="currcity"></span>
+                <div class="d-flex align-items-center gap-5">
+                  <span class="temp fw-bold text-white" id="currtemp"></span>
+                  <img src="" id="curricon" class="img-fluid" />
+                </div>
+                <span class="text-primary status" id="currstatus"></span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="inner bg-section h-100">
+              <p class="bg-primary-section text-center py-2 weekday-name1"></p>
+              <div class="text-center p-5">
+                <img src="" class="next-icon1" />
+                <h5 class="text-white max-temp1"></h5>
+                <p class="min-temp1"></p>
+                <span class="text-primary status sta-text1"></span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="inner3 bg-section h-100">
+              <p class="bg-primary-section text-center py-2 weekday-name2"></p>
+              <div class="text-center p-5">
+                <img src="" class="next-icon2" />
+                <h5 class="text-white max-temp2"></h5>
+                <p class="min-temp2"></p>
+                <span class="text-primary status sta-text2"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="py-5">
+      <div class="container">
+        <div class="row align-items-center gy-3">
+          <div class="col-md-8 position-relative">
+            <input
+              type="text"
+              class="form-control p-3 rounded-pill border-0 text-white"
+              placeholder="Enter your email to subscripe..."
+            />
+            <button
+              class="position-absolute end-0 me-4 top-50 translate-middle-y btn rounded-pill text-white"
+            >
+              subscripe
+            </button>
+          </div>
+          <div class="col-md-4">
+            <div
+              class="icons d-flex align-items-center justify-content-center gap-1"
+            >
+              <div
+                class="icon d-flex align-items-center justify-content-center rounded-circle"
+              >
+                <i class="fab fa-facebook-f fa-fw text-white"></i>
+              </div>
+              <div
+                class="icon d-flex align-items-center justify-content-center rounded-circle"
+              >
+                <i class="fab fa-twitter fa-fw text-white"></i>
+              </div>
+              <div
+                class="icon d-flex align-items-center justify-content-center rounded-circle"
+              >
+                <i class="fab fa-google-plus-g fa-fw text-white"></i>
+              </div>
+              <div
+                class="icon d-flex align-items-center justify-content-center rounded-circle"
+              >
+                <i class="fab fa-pinterest fa-fw text-white"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <p class="py-1">
+              Copyright 2014 Company name. Designed by Themezy. All rights
+              reserved
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/route.js"></script>
+  </body>
+</html>
