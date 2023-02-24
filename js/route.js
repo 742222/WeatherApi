@@ -9,7 +9,6 @@ function myreq(city) {
   myreq.addEventListener("readystatechange", function () {
     if (this.readyState === 4 && this.status === 200) {
       let data = JSON.parse(myreq.responseText);
-      console.log(data);
       currentday(data);
       nextday(data, 1);
       nextday(data, 2);
@@ -54,5 +53,5 @@ function nextday(data, index) {
   min_temp.innerHTML = datalist[index].day.mintemp_c;
 }
 find.addEventListener("input", function () {
-  myreq(this.value);
+  if (`${this.value}`.length > 2) myreq(this.value);
 });
